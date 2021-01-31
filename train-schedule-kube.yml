@@ -43,8 +43,8 @@ spec:
           periodSeconds: 10
         resources:
           requests:
-            cpu: 200m  
-            
+            cpu: 200m
+
 ---
 
 apiVersion: autoscaling/v2beta1
@@ -63,4 +63,4 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: 50       
+      targetAverageUtilization: 50
